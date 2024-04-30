@@ -1,11 +1,11 @@
 ### Program Strusture
 
-- ├── root 
-- ├── main.ts
--     ├── Weather API (Service)
--     ├── First Tab (Table)
--     ├── Second-Tab (Graph)
--     └── Third-Tab (Calculator)
+├── root 
+├── main.ts
+    ├── Weather API (Service)
+    ├── First Tab (Table)
+    ├── Second-Tab (Graph)
+    └── Third-Tab (Calculator)
 
 ### Explanation
 
