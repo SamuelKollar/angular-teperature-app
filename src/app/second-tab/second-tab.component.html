@@ -1,0 +1,11 @@
+<div style="overflow: hidden;">
+    <apx-chart *ngIf="!loading"
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [dataLabels]="chartOptions.dataLabels"
+      [stroke]="chartOptions.stroke"
+      [title]="chartOptions.title"
+      [grid]="chartOptions.grid ?? { row: { colors: ['transparent'], opacity: 0.5 } }"
+    ></apx-chart>
+  </div>

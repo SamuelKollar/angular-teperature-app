@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #424242; color: #dcdcdc;}
+input {
+    margin: 0px 5px;
+    box-sizing: border-box;
+    border: 2px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #424242;
+    color: white;
+}
+.apexcharts-text tspan {
+    fill: #dcdcdc;
+}
+.apexcharts-tooltip-title {
+    color: black;
+}
+.apexcharts-tooltip-marker{
+    background-color: #C2185A !important;
+}
+.apexcharts-tooltip-text{
+    color: black;
+}
+.apexcharts-title-text{
+    fill: white !important;
+}
+
+.apexcharts-tooltip-text-y-value::after {
+    content: ' °C';
+}

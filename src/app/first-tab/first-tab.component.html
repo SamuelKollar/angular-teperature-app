@@ -1,0 +1,37 @@
+<div *ngIf="tableData.length > 0">
+    <table mat-table [dataSource]="tableData" class="mat-elevation-z8">
+    <!-- Datetime Column -->
+    <ng-container matColumnDef="time">
+      <th mat-header-cell *matHeaderCellDef> Datetime </th>
+      <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+    </ng-container>
+  
+    <!-- Temperature Column -->
+    <ng-container matColumnDef="temperature2m">
+      <th mat-header-cell *matHeaderCellDef> Temperature </th>
+      <td mat-cell *matCellDef="let element"> {{element.temperature2m}} </td>
+    </ng-container>
+  
+    <!-- Relative Humidity Column -->
+    <ng-container matColumnDef="relativeHumidity2m">
+      <th mat-header-cell *matHeaderCellDef> Relative Humidity </th>
+      <td mat-cell *matCellDef="let element"> {{element.relativeHumidity2m}} </td>
+    </ng-container>
+  
+    <!-- Weather Code Column -->
+    <ng-container matColumnDef="weatherCode">
+      <th mat-header-cell *matHeaderCellDef> Weather Code </th>
+      <td mat-cell *matCellDef="let element"> {{element.weatherCode}} </td>
+    </ng-container>
+  
+    <!-- Surface Pressure Column -->
+    <ng-container matColumnDef="surfacePressure">
+      <th mat-header-cell *matHeaderCellDef> Surface Pressure </th>
+      <td mat-cell *matCellDef="let element"> {{element.surfacePressure}} </td>
+    </ng-container>
+  
+    <!-- Define the row template -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
