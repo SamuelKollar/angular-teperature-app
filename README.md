@@ -23,3 +23,6 @@
 ### Start the program
 - Run `npm install` to install the dependencies.
 - Run `ng server --open` to start the program.
+
+### External Libraries Used
+- ng-apexcharts (Second Tab)
